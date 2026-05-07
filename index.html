@@ -3,112 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Captain Payloads | Ethical Hacker</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #050505;
-            color: #e0e0e0;
-            font-family: 'Fira Code', monospace;
-            overflow-x: hidden;
-        }
-        .orbitron { font-family: 'Orbitron', sans-serif; }
-        
-        /* Animated Background */
-        #bg-animation {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1;
-            background: radial-gradient(circle at center, #1a0b2e 0%, #050505 100%);
-        }
-
-        .cyber-card {
-            background: rgba(20, 20, 20, 0.8);
-            border: 1px solid #7000ff;
-            box-shadow: 0 0 15px rgba(112, 0, 255, 0.2);
-            transition: 0.3s;
-        }
-        .cyber-card:hover {
-            box-shadow: 0 0 25px rgba(112, 0, 255, 0.5);
-            border-color: #00f2ff;
-        }
-
-        .glitch-text {
-            text-shadow: 2px 0 #ff00c1, -2px 0 #00fff9;
-        }
-
-        .btn-primary {
-            background: linear-gradient(45deg, #7000ff, #00f2ff);
-            transition: transform 0.2s;
-        }
-        .btn-primary:hover { transform: scale(1.05); }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div id="bg-animation"></div>
-
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="orbitron text-2xl font-bold tracking-tighter text-cyan-400">
-            CAPTAIN <span class="text-purple-500">PAYLOADS</span>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://ibb.co/7tT2YNvv" alt="Captain Payloads Logo" class="brand-logo">
+            <span>CAPTAIN PAYLOADS</span>
         </div>
-        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
-            <a href="#about" class="hover:text-cyan-400">Identity</a>
-            <a href="#offer" class="hover:text-cyan-400 text-yellow-400 font-bold underline">Special Offer</a>
-            <a href="#contact" class="hover:text-cyan-400">Contact</a>
-        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Status</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#deployment">Deployment</a></li>
+            <li><a href="#transmit">Transmit</a></li>
+        </ul>
     </nav>
 
-    <header class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="orbitron text-5xl md:text-7xl font-bold mb-4 glitch-text">NAVIGATING BITS</h1>
-        <h2 class="orbitron text-2xl md:text-4xl text-purple-400 mb-8 tracking-[0.2em]">SECURING BYTES</h2>
-        <p class="max-w-2xl text-gray-400 mb-10">20-year-old Student | Web Dev Expert | Kali Linux Navigator</p>
-        <div class="flex space-x-4">
-            <a href="#offer" class="btn-primary px-8 py-3 rounded-sm font-bold text-black uppercase">Claim $1 Website</a>
-            <a href="#about" class="border border-cyan-400 px-8 py-3 rounded-sm font-bold text-cyan-400 uppercase hover:bg-cyan-400/10">The Mission</a>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2 class="glitch-text">ACCESS GRANTED</h2>
+            <h1>Ethical Hacker | <span class="highlight">Web Architect</span></h1>
+            <p>Deploying secure, high-performance digital infrastructure.</p>
+            <div class="hero-btns">
+                <a href="#deployment" class="btn primary">Initiate Project</a>
+                <a href="#transmit" class="btn secondary">Secure Line</a>
+            </div>
         </div>
-    </header>
-
-    <section id="about" class="max-w-4xl mx-auto py-20 px-6">
-        <h2 class="orbitron text-3xl text-cyan-400 mb-8 border-l-4 border-purple-600 pl-4 uppercase">System Identity</h2>
-        <div class="cyber-card p-8 rounded-lg leading-relaxed">
-            <p class="mb-4">
-                I am a 20-year-old student and an aspiring <span class="text-purple-400">Ethical Hacker</span>. 
-                My true identity remains encrypted for security purposes, but my work speaks for itself.
-            </p>
-            <p class="mb-4 text-cyan-300">
-                Current OS: Kali Linux | Field of Study: Cybersecurity & Web Architecture.
-            </p>
-            <p>
-                My dream is to become the <span class="text-yellow-500 font-bold italic text-lg">"Hacking King"</span>—not to create chaos, but to build a safer digital world. 
-                I help people secure their data and build high-speed, secure websites.
-            </p>
+        <div class="hero-image">
+            <img src="https://ibb.co/p6Gc1Pj0" alt="Captain Payloads">
         </div>
     </section>
 
-    <section id="offer" class="max-w-5xl mx-auto py-20 px-6">
-        <div class="bg-gradient-to-br from-purple-900/40 to-cyan-900/40 border-2 border-yellow-500/50 p-12 rounded-2xl text-center">
-            <h2 class="orbitron text-4xl mb-4 text-yellow-400">LAUNCH MISSION OFFER</h2>
-            <p class="text-xl mb-6 font-bold">Build your digital footprint with Captain Payloads.</p>
-            <div class="text-6xl font-bold mb-6 text-white">$1 <span class="text-lg font-light text-gray-300">/ per website</span></div>
-            <p class="max-w-xl mx-auto text-gray-300 mb-8 italic text-sm">
-                *Exclusive for the first 100 clients. I'm building my legacy while helping you build yours. Limited slots available.
-            </p>
-            <a href="mailto:captainpayloads@gmail.com" class="inline-block bg-yellow-500 text-black font-black px-12 py-4 rounded-full text-lg hover:bg-yellow-400 transition">CONTACT TO CLAIM</a>
+    <section id="mission" class="mission">
+        <div class="container">
+            <h2 class="section-title">THE MISSION</h2>
+            <div class="mission-grid">
+                <div class="mission-text">
+                    <p>Operating under the codename <strong>Captain Payloads</strong>, I am a security researcher and full-stack architect specializing in <strong>Kali Linux</strong> and defensive web structures.</p>
+                    <p>My identity remains <strong>[CLASSIFIED]</strong> to maintain operational security, but my objective is clear: to become the King of Hacking by securing the web, one payload at a time.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-20 text-center border-t border-white/5">
-        <h2 class="orbitron text-2xl mb-8 uppercase tracking-widest text-purple-400">Connect to Server</h2>
-        <div class="flex justify-center space-x-8 mb-12">
-            <a href="https://www.linkedin.com/in/captain-payloads-ethical" class="text-gray-400 hover:text-cyan-400 transition">LinkedIn</a>
-            <a href="https://x.com/captainpayloads" class="text-gray-400 hover:text-cyan-400 transition">Twitter/X</a>
-            <a href="https://www.instagram.com/captainpayloads" class="text-gray-400 hover:text-cyan-400 transition">Instagram</a>
+    <section id="deployment" class="deployment">
+        <div class="offer-box">
+            <span class="tag">LIMITED INTEL</span>
+            <h2>Active Deployment Offer</h2>
+            <p>Full Professional Website Development</p>
+            <div class="price">$1.00</div>
+            <p class="urgency">Available only for the first <strong>100 Clients</strong>.</p>
+            <a href="#transmit" class="btn pulse">Claim Slot</a>
         </div>
-        <p class="text-xs text-gray-600 uppercase tracking-tighter">
-            © 2026 Captain Payloads | All Rights Encrypted.
-        </p>
+    </section>
+
+    <footer id="transmit" class="transmit">
+        <h2>ESTABLISH CONNECTION</h2>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:yourgmail@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2024 Captain Payloads. All packets encrypted.</p>
     </footer>
 
 </body>
